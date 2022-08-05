@@ -33,6 +33,7 @@ const tags = ['work', 'status', 'success']
 
 const StoryArticle = ({ story }: StoryArticleProps) => {
   const theme = useMantineTheme()
+  const withPlaceholderProps = story.thumbnail ? {} : { withPlaceholder: true }
   return (
     <Card
       component="article"
@@ -59,7 +60,7 @@ const StoryArticle = ({ story }: StoryArticleProps) => {
           height="400px"
           src={story.thumbnail}
           alt={story.title}
-          withPlaceholder
+          {...withPlaceholderProps}
           sx={(theme) => ({
             border: '1px solid #888',
             boxShadow: theme.shadows.lg,
