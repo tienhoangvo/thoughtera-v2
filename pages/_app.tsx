@@ -57,12 +57,12 @@ function MyApp({ Component, pageProps }: MyAppProps) {
           withNormalizeCSS
           theme={{
             colorScheme,
-            fontFamily: 'Mali',
+            fontFamily: 'Philosopher',
             loader: 'dots',
             primaryColor: 'violet',
 
             headings: {
-              fontFamily: 'Mali',
+              fontFamily: 'Philosopher',
             },
           }}
         >
